@@ -1,0 +1,21 @@
+/* Global properties */
+.noBdr{ border:none !important; }
+
+/*===========footer=============*/
+
+.footer{border-top: 1px solid #c7cac8;}
+
+.find_box p{float: left; font: normal 14px/18px Arial; color: #a0a0a0;}
+.find_box ul{list-style:none;}
+.find_box ul li{float: left; margin: 0 5px;}
+
+.foot_rit_nav ul{list-style:none; padding: 0; margin: 0;}
+.foot_rit_nav ul li{float: right; margin: 0 12px 0 0;}
+.foot_rit_nav ul li a{font: normal 12px/18px Arial; color: #a0a0a0;}
+.foot_rit_nav ul li a:hover{color: #f5811f;}
+
+.copy_prt p{font: normal 12px/18px Arial; color: #a0a0a0; margin: -12px 0 0 0}
+.copy_prt p span{color: #f5811f;}
+
+.social ul{list-style:none; padding:0; margin:0;}
+.social ul li{float:right; list-style:none; padding-left:10px;}

@@ -1,0 +1,33 @@
+{% extends 'template.html' %}
+
+{% block body %}
+<div class="mid_prt">
+  <div class="mid_prt_top"></div>
+  <div class="mid_prt_mid">
+    <div class="mid_main" align="left">
+      <div class="mid_main_head">
+        <h3>About us</h3>
+      </div>
+      <div class="inner_add">
+        <p>Professional photography services...
+      </div>
+    </div>
+  </div>
+  <div class="mid_prt_bot"></div>
+  <table border=0 style="width:100%;border-spacing:10px 25px;border-collapse:separate">
+    <tr>
+      <td width="50%" align="center" valign="top">
+        <!--Facebook feed starts-->
+        <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fkaievesphotography&amp;width=350&amp;height=600&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=true&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:350px; height:600px;" allowTransparency="true"></iframe>
+        <!--Facebook feed ends-->
+      </td>
+      <td width="50%" align="center" valign="top">
+        <!--Twitter feed starts-->
+        <a class="twitter-timeline" href="https://twitter.com/hashtag/kaievesphotography" data-widget-id="499207131115966465">#kaievesphotography Tweets</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <!--Twitter feed end-->
+      </td>
+    </tr>
+  </table>
+</div>
+{% endblock %}

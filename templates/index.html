@@ -1,0 +1,21 @@
+{% extends 'template.html' %}
+
+{% block body %}
+<div align="left">
+<p>
+  <h2>Welcome to Kai Eves Photography</h2>
+<p>
+  <a href="mailto:info@kaievesphotography.com"><strong>info@kaievesphotography.com</strong></a>.
+</div align="center">
+  <h2>Some examples of my work</h2>
+  <table border=0 style="width:100%;border-spacing:0px 0px;border-collapse:separate;">
+    <tr>
+    {% for image in images %}
+      <td> <a href="{{ url_for('static', filename=image) }}"><img src="{{ url_for('static', filename=image) }}" alt="" title="" width="500px"></a> </td>
+      {% if loop.index is divisibleby 4 %} </tr><tr> {% endif %}
+    {% endfor %}
+    </tr>
+  </table>
+<div>
+</div>
+{% endblock %}

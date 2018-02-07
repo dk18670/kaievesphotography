@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="True" name="HandheldFriendly">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Quality photography services.">
+    <meta name="keywords" content="quality professional photography services">
+    <title>{{ title }} - {{ subtitle }}</title>
+    <meta property="og:image" content="{{ url_for('static', filename='images/logo.png') }}" />
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='apple-touch-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='apple-touch-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='apple-touch-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='apple-touch-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='apple-touch-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='apple-touch-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='apple-touch-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='apple-touch-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='apple-touch-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', filename='android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='favicon-96x96.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ url_for('static', filename='ms-icon-144x144.png') }}">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    {% set ad = 'publishers/' + publisher1 + '-mobile.htm' %}
+    {% include ad %}
+
+    {% include 'cookies.html' %}
+  </head>
+  <style>       body {         font-family: 'Open Sans', sans-serif;         }     </style>
+  <body ng-app="app" ng-controller="ctrl" ng-keypress="key($event)">
+    <div align="center">
+      <table border=0 style="width:100%;border-spacing:0px 0px;border-collapse:separate;min-width:1024;">
+        <tr>
+          <td width="100%" align="center" valign="top" style="padding-left:20px;padding-right:20px">
+            {% include 'header.html' %}
+            {% block body %}
+            {% endblock %}
+        </tr>
+        <tr>
+          <td>
+            <br>
+        </tr>
+        <tr>
+          <td colspan=3 width="100%" align="center">
+            {% include 'footer.html' %}
+        </tr>
+      </table>
+      {% include 'tracking.html' %}
+    </div>
+
+    {% block scripts %}
+    {% endblock %}
+  </body>
+</html>
