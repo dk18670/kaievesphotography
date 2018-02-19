@@ -9,6 +9,10 @@
     <title>{{ title }} - {{ subtitle }}</title>
     <meta property="og:image" content="{{ url_for('static', filename='images/logo.png') }}" />
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='apple-touch-icon-57x57.png') }}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='apple-touch-icon-60x60.png') }}">
@@ -31,6 +35,17 @@
 
     {% set ad = 'publishers/' + publisher1 + '-mobile.htm' %}
     {% include ad %}
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <!-- AngularJS -->
+    <script src="{{ url_for('static', filename='js/angular.js') }}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <!-- Include Bootstrap typeahead plugin -->
+    <script src="{{ url_for('static', filename='js/bootstrap-typeahead.min.js') }}"></script>
+    <!-- Include Bootstrap datepicker plugin -->
+    <script src="{{ url_for('static', filename='js/bootstrap-datepicker.min.js') }}"></script>
 
     {% include 'cookies.html' %}
   </head>
